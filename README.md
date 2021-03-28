@@ -1,6 +1,11 @@
 # RL Garage Scraper
 
-Scraper utility to retrieve Rocket League item image urls from [RL Garage](https://rocket-league.com/items)
+Scraper utility to retrieve Rocket League item image urls from 
+[RL Garage](https://rocket-league.com/items)
+
+Credit to [kaiserdj](https://github.com/kaiserdj) on the 
+[rl-garage-assets](https://github.com/kaiserdj/rl-garage-asset) 
+project for references in making this project.
 
 ## Install
 
