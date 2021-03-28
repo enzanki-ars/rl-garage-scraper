@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import { Browser } from 'puppeteer';
 
 import { categoryToPath } from '../config';

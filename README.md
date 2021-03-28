@@ -4,7 +4,7 @@ Scraper utility to retrieve Rocket League item image urls from
 [RL Garage](https://rocket-league.com/items)
 
 Credit to [kaiserdj](https://github.com/kaiserdj) on the 
-[rl-garage-assets](https://github.com/kaiserdj/rl-garage-asset) 
+[rl-garage-assets](https://github.com/kaiserdj/rl-garage-assets) 
 project for references in making this project.
 
 ## Install
@@ -38,6 +38,17 @@ See `config.ts` for customization options
 or
 > npm run start
 ```
+
+## Command-Line Arguments
+`-c, --clean`: Cleans / removes the output directory before scraping.
+
+`-d, --download`: Downloads the assets from [RL Garage](https://rocket-league.com/items).
+
+`-i, --inputDir <path>`: Specify the input directory. Default:
+>C:/ Program Files (x86) / Steam / steamapps / common / rocketleague / Binaries / Win64
+
+`-o, --outputDir <path>`: Specify the output directory. Default:
+>{ Project Directory } / output
 
 ## Contributing
 

@@ -3,11 +3,9 @@ import { existsSync } from 'fs';
 import { readFile, writeFile } from 'fs/promises';
 
 import { Category, GameDB } from '../@types';
-import { inputDir, outputDir } from '../config';
 
-const inputFile = `${inputDir}\\items.csv`;
-
-export async function readInput() {
+export async function readInput(inputDir: string) {
+	const inputFile = `${inputDir}\\items.csv`;
 	try {
 		const csvData = await readFile(inputFile, 'latin1');
 		return csvData.split('\r').reduce((result, item) => {
@@ -57,7 +55,11 @@ export async function readInput() {
 	}
 }
 
-export async function writeOutput(fileName: string, jsonData: any) {
+export async function writeOutput(
+	outputDir: string,
+	fileName: string,
+	jsonData: any
+) {
 	// Write object to JSON
 	if (!Array.isArray(jsonData)) {
 		const file = `${outputDir}/${fileName}.json`;

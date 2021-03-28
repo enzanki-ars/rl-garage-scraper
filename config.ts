@@ -1,8 +1,8 @@
 import { Category, RequiredData, OptionalData, ExcludedData } from './@types';
 
-export const inputDir =
+export const defaultInputDir =
 	'C:\\Program Files (x86)\\Steam\\steamapps\\common\\rocketleague\\Binaries\\Win64';
-export const outputDir = './output';
+export const defaultOutputDir = './output';
 
 export const baseURL = 'https://rocket-league.com';
 export const dbPath = 'items';
