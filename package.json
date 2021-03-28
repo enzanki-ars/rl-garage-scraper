@@ -9,7 +9,7 @@
 		"scrape": "node dist/index.js"
 	},
 	"author": "grantclark209",
-	"license": "ISC",
+	"license": "MIT",
 	"dependencies": {
 		"chalk": "^4.1.0",
 		"cli-progress": "^3.9.0",
