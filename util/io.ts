@@ -5,7 +5,7 @@ import { readFile, writeFile } from 'fs/promises';
 import { Category, GameDB } from '../@types';
 
 export async function readInput(inputDir: string) {
-	const inputFile = `${inputDir}\\items.csv`;
+	const inputFile = `${inputDir}/items.csv`;
 	try {
 		const csvData = await readFile(inputFile, 'latin1');
 		return csvData.split('\r').reduce((result, item) => {
